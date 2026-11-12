@@ -50,7 +50,7 @@ run_agent(question, provider, tools, max_steps=6) -> dict
 - Kết quả có tối thiểu `status` (`completed`, `max_steps`, `error`), `answer` (string), `trace` (list) và `usage` (list). Có thể thêm `error`.
 - Mỗi phần tử trong `trace` là dict có key `event`. Một tool call ghi đúng dạng `{'event': 'tool', 'step': n, 'name': ..., 'arguments': ..., 'result': ...}`, vì tests và phần chấm bằng code đọc các key này.
 
-`SCHEMAS` được import từ `status_tools`. Mỗi model call là một step, không phải mỗi tool call. Không yêu cầu model in chain-of-thought: trace chỉ cần step, finish, tool name, arguments và result. Đừng đưa key vào trace.
+`SCHEMAS` được import từ `status_tools`. Mỗi model call là một step, không phải mỗi tool call. Không yêu cầu model in chain-of-thought: trace chỉ cần step, finish, tool name, arguments và result. Đừng đưa key vào trace. 
 
 **Checkpoint:** Sau tool call đầu tiên, model có thực sự nhận được tool result gắn đúng ID không? Nếu có hai calls thì cả hai kết quả đã được trả chưa?
 
