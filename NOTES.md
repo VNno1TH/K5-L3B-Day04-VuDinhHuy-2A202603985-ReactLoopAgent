@@ -1,5 +1,8 @@
 # Ghi chú phân tích · Day 04
 
+- Họ và tên: Vũ Đình Huy
+- MSSV: 2A202603985
+
 ## 1. Case được chọn và bằng chứng trong trace
 
 **Case chọn: H6 (điểm 60), kèm H1 (điểm 60) có cùng lỗi.** Số liệu trong mục này lấy từ `eval_before.json`.
